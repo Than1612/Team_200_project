@@ -4,16 +4,16 @@ import { IconArrowRight } from '@/components/ui/icons';
 
 const exampleMessages = [
   {
-    heading: 'What are the trending stocks?',
-    message: 'What are the trending stocks?',
+    heading: 'List the items needed for the beach trip tomorrow.',
+    message: 'List the items needed for the beach trip tomorrow.',
   },
   {
-    heading: "What's the stock price of AAPL?",
-    message: "What's the stock price of AAPL?",
+    heading: "List the ingredients required for making a pizza.",
+    message: "List the ingredients required for making a pizza.",
   },
   {
-    heading: "I'd like to buy 10 shares of MSFT",
-    message: "I'd like to buy 10 shares of MSFT",
+    heading: "Things required for setting up a bedroom.",
+    message: "Things required for setting up a bedroom.",
   },
 ];
 
@@ -26,14 +26,13 @@ export function EmptyScreen({
     <div className="mx-auto max-w-2xl px-4">
       <div className="rounded-lg border bg-background p-8 mb-4">
         <h1 className="mb-2 text-lg font-semibold">
-          Welcome to AI SDK 3.0 Generative UI demo!
+          Team 200 Sales bot
         </h1>
         <p className="mb-2 leading-normal text-muted-foreground">
-          This is a demo of an interactive financial assistant. It can show you
-          stocks, tell you their prices, and even help you buy shares.
+        This is an interactive sales bot. It can ask you for a specific situation or event, respond with the things needed for that situation, and link you to the sales pages of the recommended products.
         </p>
         <p className="mb-2 leading-normal text-muted-foreground">
-          The demo is built with{' '}
+          It is built with{' '}
           <ExternalLink href="https://nextjs.org">Next.js</ExternalLink> and the{' '}
           <ExternalLink href="https://sdk.vercel.ai/docs">
             Vercel AI SDK
@@ -66,10 +65,6 @@ export function EmptyScreen({
           ))}
         </div>
       </div>
-      <p className="leading-normal text-muted-foreground text-[0.8rem] text-center max-w-96 ml-auto mr-auto">
-        Note: Data and latency are simulated for illustrative purposes and
-        should not be considered as financial advice.
-      </p>
     </div>
   );
 }

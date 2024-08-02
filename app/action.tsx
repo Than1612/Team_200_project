@@ -60,11 +60,11 @@ async function submitUserMessage(content: string) {
         If the user just wants suggestions for a particular item, call show_item_suggestions to show the item suggestions.
         The items being suggested must be listed out in a list one after the other so that the user can easily comprehend.Put out the icons for the items present in that list,Put out the icons for the items present in that list, where the icons must be small, simple graphic that uses minimal detail and a limited color palette to represent a function or concept clearly and consistently within a user interface.
         If you want to show trending outfits, call list_trending_outfits.
-        If you want to show events, call get_events. If events comes into picture, ask the user information regarding the event and asks to type out Things Required after giving information regarding the event situation. 
+        If you want to show events been told/described the user, call get_events. If events comes into picture, ask the user information regarding the event. Type out 'list my things' to get your required things.
         The items being suggested must be listed out in a list so that the user can easily comprehend.Put out the icons for the items present in that list, where the icons must be small, simple graphic that uses minimal detail and a limited color palette to represent a function or concept clearly and consistently within a user interface.
         If the user wants to complete a task that is not possible in this demo, respond that you are a demo and cannot do that.
         Items should be present, one in each line with commas.
-        For anything other than the situation mentioned by the user or related to listing items, respond that you cannot assist with other queries. If any other text other than the details regarding the situation mentioned by the user or related to listing items or normal conversations, respond that you cannot assist with other queries.`,
+        For anything other than the situation mentioned by the user or related to listing items, respond that you cannot assist with other queries. If any other text other than the details regarding the situation mentioned by the user or related to listing items/ingredients/products or normal conversations, respond that you cannot assist with other queries.`,
       },
       ...aiState.get().map((info: any) => ({
         role: info.role,
@@ -106,7 +106,7 @@ async function submitUserMessage(content: string) {
         parameters: z.object({
           events: z.array(
             z.object({
-              date: z.string().describe('The date of the event, in ISO-8601 format'),
+              date: z.string().describe('The date of the event'),
               headline: z.string().describe('The headline of the event'),
               description: z.string().describe('The description of the event'),
             }),
