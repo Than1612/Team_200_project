@@ -12,7 +12,6 @@
 - [Next.js](https://nextjs.org) App Router + React Server Components
 - [Vercel AI SDK 3.0](https://sdk.vercel.ai/docs) for Generative UI
 - OpenAI Tools/Function Calling
-- [shadcn/ui](https://ui.shadcn.com)
 
 ## Quick Links
 
