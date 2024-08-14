@@ -1,11 +1,4 @@
-<a href="https://sdk.vercel.ai/rsc-demo">
-  <img alt="Generative UI Demo" src="https://github.com/vercel/ai/assets/4060187/f21fa839-c710-4f09-9af4-2056f603d98f">
-  <h1 align="center">Generative UI Demo</h1>
-</a>
-
-<p align="center">
-  Experimental Sales Bot
-</p>
+<h1 align="center">Experimental Sales Bot</h1>
 
 ## Features
 
